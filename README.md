@@ -13,7 +13,6 @@ A timer based coding assessment using mainly Javascript.
  ## Screenshots
  ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%208.56.43%20AM.png)
  ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%208.56.48%20AM.png)
- ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%208.57.47%20AM.png)
  ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%208.57.51%20AM.png)
  ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%208.58.00%20AM.png)
  ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%208.58.15%20AM.png)
