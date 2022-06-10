@@ -10,38 +10,36 @@
 </head>
 
 <body>
-    <header class="col-12">
-        <div id="highScores">
-            <a href="highscores.html">High Scores</a>
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="game-box col-lg-8 p-4">
+            <div class="row pb-4">
+                <div class="col-lg-4">
+                    <button class="btn btn-outline-primary">Hight Score</button>
+                </div>
+                <div class="col-lg-4"></div>
+
+                <div class="col-lg-4">
+                    <h4 class="float-right text-primary">Timer :10</h4>
+
+                </div>
+            </div>
+            <div class="quiz-questions d-none" id="quiz-questions">
+                <h3 class="text-primary text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <div class="answers mt-5 mb-5">
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                    <button class="btn-primary btn-block text-left">Lorem ipsum dolor sit.</button>
+                </div>
+                
+            </div>
+            <div class="btnstart d-flex justify-content-center mt-4"> 
+                <button class="btn btn-primary btn-lg" id="btn-start">Start Quiz</button>
+
+            </div>
         </div>
-        <div id="timerBox" style="margin-left: 85%">Time</div>
-        <div id="timer">
-
-        </div>
-
-    </header>
-
-    <div class="Container col-xs-12 col-md-6 col-lg-8">
-        <div class="start-quiz">
-            <h1>Start Quiz</h1>
-        </div>
-
-        <div class="quiz-questions">
-            <h1>Quiz Questions</h1>
-        </div>
-
-        <div class="quiz-score">
-            <h1>Quiz Score</h1>
-        </div>
-
-        <div class="quiz-control">
-            <h1>Quiz Control</h1>
-        </div>
-
     </div>
-    
-</body>
-
+    </body>
 
 <script src="script.js"></script>
 </html>
