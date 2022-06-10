@@ -4,7 +4,7 @@ var timer = document.getElementById("timer");
 
 var btnStart = document.getElementById("btn-start");
 
-var timecounter = document.getElementById("timecounter");
+var timeCounter = document.getElementById("timecounter");
 
 var titleitem = document.getElementById("title-item");
 
@@ -66,7 +66,7 @@ function starQuiz(){
     }
     info.classList.add("d-none")
     btnStart.classList.add("d-none")
-    timecounter.classList.remove("d-none")
+    timeCounter.classList.remove("d-none")
     quizQuestions.classList.remove("d-none")
     nextQuestions= questions[currentindex]
     console.log(nextQuestions.title)
@@ -156,17 +156,17 @@ function displaynextQuestion(e){
 function correction(response){
     
     if(response){
-        alert.innerText= "Good"
-        console.log("Good")
+        alert.innerText= "Correct!!"
+        console.log("correct")
     
     }else {
         
-        alert.innerText="Wrong"
+        alert.innerText="Wrong!"
         
         count = count -15
         
         timer.innerHTML = count
-        console.log("Wrong")
+        console.log("incorrect")
 
     }
     setTimeout(function(){
@@ -181,7 +181,7 @@ function correction(response){
     
     addscore.classList.remove("d-none")
     
-    timecounter.classList.add("d-none")
+    timeCounter.classList.add("d-none")
     
     quizQuestions.classList.add("d-none")
     
