@@ -26,13 +26,20 @@
             <div class="quiz-questions d-none" id="quiz-questions">
                 <h3 class="text-primary text-center" id="title-item">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
                 <div class="answers mt-5 mb-5" id="question-answers">
-                    
                 </div>
+                <h1 id="alert"></h1>
                 
             </div>
-            <div class="btnstart d-flex justify-content-center mt-4"> 
+            <div class="btnstart d-flex flex-column justify-content-center mt-4"> 
+                <p id="info">Please answer the questions within the time limit. Any wrong answers will deduct from the time.</p>
                 <button class="btn btn-primary btn-lg" id="btn-start">Start Quiz</button>
 
+            </div>
+            <div class="d-none" id="addscore">
+                <div class="d-flex">
+                    <input type="text" name="" id="inputscore" class="formcontrol">
+                    <button class="btn btn-primary" id="submitResult">Submit</button>
+                </div>
             </div>
         </div>
     </div>

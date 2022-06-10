@@ -5,8 +5,15 @@ var timecounter = document.getElementById("timecounter");
 var titleitem = document.getElementById("title-item");
 var nextQuestions
 var questionanswers = document.getElementById("question-answers");
-var currentindex =  0;
+var currentIndex =  0;
 var alert = document.getElementById("alert");
+var score = 0;
+var count = 75;
+var info = document.getElementById("info");
+var addScore = document.getElementById("add-score");
+var submitResult = document.getElementById("sumbit-result")
+var allScores = [];
+var storageScore = JSON.parse(localStorage.getItem("userData"));
 var questions = [
     {
         title: "A very useful tool used during development and debugging for printing content to the debugger is:",
@@ -34,33 +41,47 @@ var questions = [
         answer: "quotes"
     },
 ]
-
-
 btnStart.addEventListener("click", starQuiz);
 function starQuiz(){
+    info.classList.add("d-none")
     btnStart.classList.add("d-none")
     timecounter.classList.remove("d-none")
     quizQuestions.classList.remove("d-none")
-    nextQuestions = questions[currentindex]
+    nextQuestions = questions[currentIndex]
     console.log(nextQuestions.title)
 
         displayQuestion(nextQuestions)
 
         gametime()
 }    
-
+submitResult.addEventListener("click", function (){
+    console.log("hey it worked!")
+});
 // set time
 
+
 function gametime () {
-    var count = 120
+    
     var timeinterval = setInterval(function(){
         timer.innerText = count
         count--
     }, 1000);
 }
 
+
+function scorePage(a, b){
+    var userData = {
+        inits: a,
+        userScore: b
+    };
+    allScores.push(userData);
+
+    localStorage.setItem("userData", JSON.stringify(allScores));
+    location.href = "highscores.html";
+}
+
 function displayQuestion(question){
-    titleitem.innerText=question.title
+    titleitem.innerText = question.title
     question.choices.forEach(element => {
         var button = document.createElement("button")
         button.className = "btn-primary btn-block text-left"
@@ -71,15 +92,20 @@ function displayQuestion(question){
 }
 
 function displaynextQuestion(e){
-    currentindex++
+    currentIndex++
+    if(currentIndex < questions.length){
     correction(e.target.innerText == nextQuestions.answer)
     questionanswers.innerHTML=""
-    if(currentindex < questions.length){
-        nextQuestions = questions[currentindex]
+    if(currentIndex < questions.length){
+        nextQuestions = questions[currentIndex]
         displayQuestion(nextQuestions)
     } else {
-        currentindex = 0
+        currentIndex = 0
         displayQuestion(nextQuestions)
+    }
+    }else{
+        console.log("endgame")
+        endgame()
     }
 }
 
@@ -90,9 +116,18 @@ function correction(response){
         console.log("correct");
     } else {
         alert.innerText = "WRONG!!"
+        count = count -5
+        timer.innerHTML = count
         console.log("wrong");
     }
     setTimeout(function(){
         alert.innerText=""
     }, 1000)
+}
+
+function endgame (){
+    btnStart.classList.add("d-none")
+    timecounter.classList.add("d-none")
+    quizQuestions.classList.add("d-none")
+    addScore.classList.remove("d-none")
 }
