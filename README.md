@@ -19,7 +19,7 @@ A timer based coding assessment using mainly Javascript.
 
  ## Links
  
- GitHub: https://github.com/travisramcharran/Code-Quiz
+ Github: https://github.com/travisramcharran/Code-Quiz
  
  Deployed: https://travisramcharran.github.io/Code-Quiz/
 
