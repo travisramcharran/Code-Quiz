@@ -1,42 +1,27 @@
 # Code-Quiz
-a timer based coding assessment using mainly Javascript
+A timer based coding assessment using mainly Javascript.
 
-04 Web APIs: Code Quiz
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. For this challenge, you will build a timed code quiz that's made up of multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+## Description
+ A timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code.
 
-User Story
+ ## Installation
+ First I created a repository on Github called Code-Quiz. Then used VSCode to create the index.html, style.css, and script.js files. Then to make it a little easier for myself to create the local storage, I made another html file and another javascript file.
 
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+ ## Usage
+ I used HTML, CSS, JS, and Bootstrap 5 CDN for this assignment. This web application can be used by students learning to code and help sharpen their knowledge.
 
+ ## Screenshots
+ ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.26.52%20AM.png)
+ ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.02%20AM.png)
+ ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.04%20AM.png)
+ ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.10%20AM.png)
+ ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.24%20AM.png)
 
+ ## Links
+ 
+ GitHub: https://github.com/travisramcharran/Code-Quiz
+ 
+ Deployed: https://travisramcharran.github.io/Code-Quiz/
 
-Acceptance Criteria
-
-GIVEN I am taking a code quiz
-WHEN I click the Start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-
-
-The following animation demonstrates the application functionality:
-
-
-Review
-You are required to submit the following for review:
-
-
-The URL of the functional, deployed application.
-
-
-The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-
+ ## Credits
+ The AskBCS learning assistants and my tutors helped me alot with this project. Thanks to them for showing me how to use Google, Youtube, Stack Overflow, and GitHub to help with the assignment.
