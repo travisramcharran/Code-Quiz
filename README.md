@@ -11,11 +11,11 @@ A timer based coding assessment using mainly Javascript.
  I used HTML, CSS, JS, and Bootstrap 5 CDN for this assignment. This web application can be used by students learning to code and help sharpen their knowledge.
 
  ## Screenshots
- ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.26.52%20AM.png)
- ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.02%20AM.png)
- ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.04%20AM.png)
- ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.10%20AM.png)
- ![alt text](screenshots/Screen%20Shot%202022-06-10%20at%206.27.24%20AM.png)
+ ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%206.26.52%20AM.png)
+ ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%206.27.02%20AM.png)
+ ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%206.27.04%20AM.png)
+ ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%206.27.10%20AM.png)
+ ![alt text](assets/screenshots/Screen%20Shot%202022-06-10%20at%206.27.24%20AM.png)
 
  ## Links
  
